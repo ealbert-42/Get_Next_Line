@@ -6,7 +6,7 @@
 #    By: ealbert <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 17:58:49 by ealbert           #+#    #+#              #
-#    Updated: 2016/03/11 18:31:25 by ealbert          ###   ########.fr        #
+#    Updated: 2016/03/13 17:52:54 by ealbert          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ SRCS =	ft_atoi.c ft_isdigit.c ft_memchr.c ft_memset.c ft_putnbr.c ft_strchr.c \
 		ft_strsub.c ft_isascii.c ft_memccpy.c ft_memmove.c ft_putendl_fd.c \
 		ft_strcat.c ft_strdel.c ft_strjoin.c ft_strncat.c ft_strnstr.c \
 		ft_strtrim.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c ft_lstnew.c \
-		ft_lstmap.c ft_lstiter.c ft_findnl.c ft_strrealloc.c ft_strmerge.c
+		ft_lstmap.c ft_lstiter.c ft_findnl.c ft_strrealloc.c ft_strmerge.c \
+		ft_strccpy.c ft_strcdel.c
 
 INCLUDES = -I .
 
@@ -44,7 +45,8 @@ OBJ =	ft_atoi.o ft_isdigit.o ft_memchr.o ft_memset.o ft_putnbr.o ft_strchr.o \
 		ft_strsub.o ft_isascii.o ft_memccpy.o ft_memmove.o ft_putendl_fd.o \
 		ft_strcat.o ft_strdel.o ft_strjoin.o ft_strncat.o ft_strnstr.o \
 		ft_strtrim.o ft_lstadd.o ft_lstdel.o ft_lstdelone.o ft_lstmap.o \
-		ft_lstiter.o ft_lstnew.o ft_findnl.o ft_strrealloc.o ft_strmerge.o
+		ft_lstiter.o ft_lstnew.o ft_findnl.o ft_strrealloc.o ft_strmerge.o \
+		ft_strccpy.o ft_strcdel.o
 
 $(NAME) :
 	@echo "\033[33;33m===LIBFT : Compilation...\033[0m"

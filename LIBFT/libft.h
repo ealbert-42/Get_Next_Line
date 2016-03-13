@@ -6,7 +6,7 @@
 /*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:48:14 by ealbert           #+#    #+#             */
-/*   Updated: 2016/03/11 18:07:28 by ealbert          ###   ########.fr       */
+/*   Updated: 2016/03/13 17:51:49 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+char				*ft_strcdel(char *str, int c);
+char				*ft_strccpy(char *s1, char *s2, int c);
 void				ft_strmerge(char **s1, char **s2);
 int					ft_findnl(char *str);
 char				*ft_strrealloc(char *str, int size);
