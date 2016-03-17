@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strccpy.c                                       :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ealbert <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ealbert <ealbert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/03/13 16:49:51 by ealbert           #+#    #+#             */
-/*   Updated: 2016/03/13 18:38:47 by ealbert          ###   ########.fr       */
+/*   Created: 2016/02/12 15:00:41 by ealbert           #+#    #+#             */
+/*   Updated: 2016/03/17 17:52:35 by ealbert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+# define BUFF_SIZE 50
+# define MAX_FD 256
+# include "libft.h"
 
-char	*ft_strccpy(char *s1, char *s2, int c)
-{
-	int 	i;
+int					get_next_line(int fd, char **line);
 
-	i = 0;
-	while (s2[i] != '\0' && s2[i] != c)
-	{
-		s1[i] = s2[i];
-		i++;
-	}
-	return (s1);
-}
+#endif
